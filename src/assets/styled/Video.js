@@ -9,7 +9,7 @@ const Containes = styled.div`
   margin: 0;
   padding: 0;
 
-  img {
+  video {
     object-fit: cover;
     width: 100%;
     height: 120vh;
