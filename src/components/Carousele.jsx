@@ -20,7 +20,7 @@ function Carousele() {
       <BoxFather>
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={12} md={6}>
               <BoxCarousel>
                 <h3 className="text-center text-success">Proyectos</h3>
                 <Carousel fade className="container container-carusel  ">
@@ -55,7 +55,7 @@ function Carousele() {
                 </Carousel>
               </BoxCarousel>
             </Col>
-            <Col sm={6}>
+            <Col sm={12} md={6}>
               <CarouselText>
                 <h3 className="text-center text-success">Mis Herramientas</h3>
                 <Boxh5 className="p-5  text-white ">

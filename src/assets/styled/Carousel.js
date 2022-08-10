@@ -4,7 +4,7 @@ const BoxFather = styled.div`
   font-family: "Open Sans", sans-serif;
   position: relative;
   width: 100%;
-  top: -1rem;
+  top: 45rem;
 `;
 const BoxCarousel = styled.div`
   position: relative;
@@ -35,7 +35,6 @@ const CarouselText = styled.div`
   font-family: "Open Sans", sans-serif;
 `;
 const Boxh5 = styled.div`
-  /* background-color: #393e46; */
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   width: 100%;
   border-radius: 5px;
