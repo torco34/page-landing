@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/NavItem";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { useState } from "react";
 const Linka = styled.div`
   position: fixed;
   top: 0;
@@ -25,25 +26,40 @@ const Linka = styled.div`
     &:hover {
       color: #198754;
     }
+    .add {
+      color: ;
+    }
   }
 `;
-function List() {
+function List(prop) {
+  const [color, setColor] = useState(true);
+
+  const handleToggle = (e) => {
+    if (!color) {
+      setColor("active");
+    }
+  };
+
   return (
     <>
       <Linka>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Nav className="justify-content-md-center">
+            <Nav onClick={handleToggle} className="justify-content-md-center">
               <Nav-Item>
-                <Link to="/" className="active">
+                <Link to="/" className={`active ${color && "add"}`}>
                   Inicio
                 </Link>
               </Nav-Item>
               <Nav-Item>
-                <Link to="/jod">Mi trabajo</Link>
+                <Link to="/jod" className={`${color && "add"}`}>
+                  Mi trabajo
+                </Link>
               </Nav-Item>
               <Nav-Item>
-                <Link to="/aboutme">Quien soy</Link>
+                <Link to="/aboutme" className={` ${!color && "active"}`}>
+                  Quien soy
+                </Link>
               </Nav-Item>
             </Nav>
           </Container>

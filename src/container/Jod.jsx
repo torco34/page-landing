@@ -6,13 +6,10 @@ import video from "../assets/img/video.mp4";
 const Jod = () => {
   return (
     <>
-      <Container>
+      {/* <Container>
         <video className="video" src={video} autoPlay loop muted />
-      </Container>
-      {/* <div className="container bg-whiter">
-      
-      
-
+      </Container> */}
+      <div className="container bg-whiter">
         <div className="row align-items-start">
           <div className="col align-self-center">
             <br />
@@ -30,7 +27,7 @@ const Jod = () => {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
