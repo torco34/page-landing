@@ -21,7 +21,7 @@
     "@vitejs/plugin-react": "^2.0.0",
     "bootstrap": "^5.2.0",
     "gh-pages": "^4.0.0",
-    "home-pages": "https://torco34.github.io/page-landing",
+    "home-pages": "https://torco34.github.io/main.jsx",
     "react-bootstrap": "^2.5.0",
     "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5",
